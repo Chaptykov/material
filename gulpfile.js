@@ -20,7 +20,7 @@ gulp.task('default', ['styles'], () => {
 	});
 
 	gulp.watch('styles/**/*.scss', ['styles']);
-	gulp.watch('index.html').on('change', sync.reload);
+	gulp.watch('*.html').on('change', sync.reload);
 });
 
 // Styles

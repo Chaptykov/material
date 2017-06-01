@@ -44,13 +44,18 @@
 	// Modifiers
 
 	@import
+		'modifiers/title',
+		'modifiers/clean',
+		'modifiers/split',
 		'modifiers/grid',
 		'modifiers/black',
-		'modifiers/white';
+		'modifiers/white',
+		'modifiers/last';
 
 	// Elements
 
 	@import
+		'elements/section',
 		'elements/columns',
 		'elements/shout',
 		'elements/cover',

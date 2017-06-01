@@ -3,7 +3,7 @@
 // ------------------------------------------------------------------
 // 1. Text ............. Positioning and font properties
 // 2. Link ............. Color and underline adjustments
-// 3. Back ............. Diagonal backdrop
+// 3. Back ............. Background color
 // ------------------------------------------------------------------
 
 .shout {
@@ -37,7 +37,7 @@
 		bottom:-300%;
 		left:0;
 		z-index:-1;
-		background:$color diagonal() no-repeat;
+		background:$color;
 		content:'';
 		}
 

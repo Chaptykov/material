@@ -36,7 +36,7 @@ pre {
 			// Marked Lines
 
 			&.mark {
-				background:mix($color, white, 10%);
+				background:mix($color, white, 15%);
 				}
 
 			// Line Numbers
@@ -60,12 +60,18 @@ pre {
 		position:relative;
 		z-index:-1;
 		margin:0 -0.3em;
+		border-radius:.2em;
+		background:mix($color, white, 15%);
 
 		// Important
 
 		&.important {
 			background:$color;
-			color:white;
+			color:white !important;
+
+			& span {
+				color:white !important; // Fix conflict with highlight.js
+				}
 			}
 
 		}

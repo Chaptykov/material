@@ -49,5 +49,8 @@
     "styles": "gulp styles",
     "prepublish": "npm run styles",
     "test": "path-exists styles/screen-16x10.css && path-exists styles/screen-4x3.css"
+  },
+  "dependencies": {
+    "highlight.js": "^9.11.0"
   }
 }

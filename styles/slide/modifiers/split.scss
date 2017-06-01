@@ -1,0 +1,41 @@
+// ------------------------------------------------------------------
+// Split
+// ------------------------------------------------------------------
+
+&.split {
+  display: flex;
+  padding-right:96px;
+
+  article {
+    box-sizing:border-box;
+    width: 50%;
+    position:relative;
+    flex:1 0 50%;
+    padding:0 72px;
+
+    &:first-child {
+      padding-left:0;
+      }
+    &:last-child {
+      padding-right:0;
+      }
+
+    &::before {
+      position: absolute;
+      top: -104px;
+      bottom: 0;
+      left: -2px;
+      width: 4px;
+      background:mix($color, transparent, 20%);
+      content:'';
+      }
+    &:first-child::before {
+      content:none;
+      }
+    }
+
+  &::after {
+    visibility:hidden;
+    }
+
+  }

@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="node_modules/highlight.js/styles/github.css">
 	<link rel="stylesheet" href="styles/screen-16x10.css">
 </head>
 <body class="shower list">
@@ -12,6 +13,28 @@
 		<h1>Presentation Title</h1>
 		<p><a href="">Yours Truly</a>, Famous Inc.</p>
 	</header>
+	<section class="slide title">
+		<h2>Presentation Title</h2>
+		<p>Author name</p>
+		<a href="mailto:example@example.com">example@example.com</a>
+		<a href="http://example.com">example</a>
+	</section>
+	<section class="slide">
+		<h2 class="section">Section title</h2>
+	</section>
+	<section class="slide clean">
+		<h2>Some message with <a href="#">link</a></h2>
+	</section>
+	<section class="slide split">
+		<article>
+			<h2>First</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit unde quasi nobis nostrum corporis, animi in, quis atque. Quae rem reprehenderit optio voluptates aut vitae deleniti reiciendis porro veritatis nemo?</p>
+		</article>
+		<article>
+			<h2>Second</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit unde quasi nobis nostrum corporis, animi in, quis atque. Quae rem reprehenderit optio voluptates aut vitae deleniti reiciendis porro veritatis nemo?</p>
+		</article>
+	</section>
 	<section class="slide">
 		<h2>Slide Header</h2>
 		<p>Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch letterpress.</p>
@@ -246,6 +269,16 @@
 			<code class="mark next">&lt;/head&gt;</code>
 		</pre>
 	</section>
+	<section class="slide">
+		<h2>Highlight.js</h2>
+		<pre>
+			<code class="html">&lt;ul class="list"&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;
+			</code>
+		</pre>
+	</section>
 	<section class="slide grid">
 		<h2>Grid Slide</h2>
 	</section>
@@ -311,6 +344,8 @@
 		</a>
 	</footer>
 	<script src="node_modules/shower-core/shower.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 	<!-- Copyright © 2016 Yours Truly, Famous Inc. -->
 </body>
 </html>
